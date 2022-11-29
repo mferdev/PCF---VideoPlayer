@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="mfer" constructor="mfervideoplayer" version="0.0.1" display-name-key="mfervideoplayer" description-key="mfervideoplayer description" control-type="standard" >
+    <external-service-usage enabled="true">
+      <domain>https://www.youtube.com</domain>
+    </external-service-usage>
+    <property name="url" display-name-key="YoutubeUrl" description-key="Url de un video de youtube que visualizaremos en un reproductor de video" of-type="SingleLine.URL" usage="bound" required="true" />
+    <property name="width" display-name-key="Ancho" description-key="Dimensiones del reproductor de video" of-type="Whole.None" usage="input" required="false" />
+    <property name="height" display-name-key="Altura" description-key="Dimensiones del reproductor de video" of-type="Whole.None" usage="input" required="false" />
+    <resources>
+      <code path="index.ts" order="1"/>
+    </resources>
+  </control>
+</manifest>
